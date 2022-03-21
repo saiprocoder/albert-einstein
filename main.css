@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #FFFFFF;
+    --linear: linear-gradient(to right, red, orange, cyan);
+    --black: #000000;
+    --yellow: #FFFF00;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 33%;
+    border: 3px solid var(--white);
+    border-radius: 50px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 25px;
+    font-family: 'Lobster Two';
+    transition: 0.6s ease;
+}
+
+.nav-list li a:hover {
+    color: var(--yellow);
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 65vh;
+    max-width: 70%;
+}
+
+.firstSection {
+    height: 89vh;
+}
+
+.firstHalf {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: 'Maven Pro';
+    font-size: 25px;
+    margin: 0 3vw;
+}
+
+.secondHalf {
+    width: 30%;
+}
+
+.secondHalf img {
+    width: 50%;
+    border-radius: 50px;
+    border: 5px solid var(--white);
+}
+
+.background {
+    background-image: var(--linear);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.text-big {
+    font-size: 30px;
+}
+
+.text-small {
+    font-size: 25px;
+}
+
+.section {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 90%;
+}
+
+.paras {
+    padding: 0 65px;
+}
+
+.secLeft {
+    flex-direction: row-reverse;
+}
+
+.text-heading {
+    font-size: 30px;
+    font-family: 'Maven Pro';
+    font-weight: bolder;
+}
+
+.text-paragraph {
+    font-size: 25px;
+    font-family: 'Ubuntu';
+}
+
+#imgFluid {
+    width: 250px;
+    border-radius: 50px;
+    border: 10px solid var(--black);
+}
+
+.back {
+    background-image: var(--linear);
+    color: var(--black);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Ubuntu';
+}
+
+@media only screen and (max-width: 1140px) {
+    .nav-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .box-main {
+        flex-direction: column;
+    }
+    .section {
+        flex-direction: column-reverse;
+    }
+    .foot {
+        text-align: center;
+    }
+}
